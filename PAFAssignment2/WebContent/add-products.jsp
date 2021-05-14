@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+
+<%
+String productId = Product.generateProductId();
+
+%>
+
 <html lang="en">
 <%@page import="com.Product"%>
 
@@ -90,7 +96,7 @@
         <div style="text-align: center;">
             <form id="formproduct" name="formproduct" class="bootstrap-form-with-validation" style="background: var(--light);padding: 40px;padding-top: 39px;text-align: left;border-style: solid;border-top-style: solid;border-top-color: var(--green);border-right-style: solid;border-right-color: var(--green);border-bottom-style: solid;border-bottom-color: var(--green);border-left-style: solid;border-left-color: var(--green);width: 930px;">
                 <h2 class="text-center" style="color: var(--green);background: var(--white);text-shadow: 0px 0px var(--purple);">Stock Your Shop</h2>
-                <div class="form-group" style="width: 820px;border-right-style: none;border-right-color: var(--indigo);"><label for="text-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-star"></i>Product ID</label><input class="form-control-plaintext" type="text" value="Product ID:" id="productId" name="productId"  /></div>
+                <div class="form-group" style="width: 820px;border-right-style: none;border-right-color: var(--indigo);"><label for="text-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-star"></i>Product ID</label><input class="form-control-plaintext" type="text" value="Product ID: <%out.print(productId); %>" id="productId" name="productId"  /></div>
                 <div class="form-group"><label for="text-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil-square-o"></i>� Title</label><input type="text" class="form-control" id="title" name="title" required /><small style="color: var(--blue);font-size: 14px;"><br />Tell the world all about your item and why they’ll love it.<br /><br /></small></div>
                 <div class="form-group"><label for="textarea-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil"></i>Short Description</label><textarea id="sDesc" name="sDesc" class="form-control"></textarea><small style="color: var(--blue);font-size: 14px;"><br />Start with a brief overview that describes your item’s finest features. Shoppers will only see this description at first, so make it count!<br /><br /></small></div>
                 <div class="form-group"><label for="textarea-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil"></i> Description</label><textarea id="lDesc" name="lDesc" class="form-control" style="  max-height: 300px;
