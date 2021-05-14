@@ -87,18 +87,16 @@ String productId = Product.generateProductId();
     <div class="container">
         <div class="row">
             <div class="col-md-12" style="width: 985.6px;">
-                <div>
-                    <div style="text-align: right;border-style: solid;border-color: var(--indigo);border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;height: 60px;"><button class="btn btn-primary" type="button" style="width: 150px;color: var(--white);background: var(--indigo);">View Details</button><button class="btn btn-primary" type="button" style="width: 150px;background: var(--indigo);color: var(--white);">Dashboard</button></div>
-                </div>
+                
             </div>
         </div>
-        <div><input type="text" class="form-control-plaintext" value="Store Name: " readonly /></div>
+        
         <div style="text-align: center;">
             <form id="formproduct" name="formproduct" class="bootstrap-form-with-validation" style="background: var(--light);padding: 40px;padding-top: 39px;text-align: left;border-style: solid;border-top-style: solid;border-top-color: var(--green);border-right-style: solid;border-right-color: var(--green);border-bottom-style: solid;border-bottom-color: var(--green);border-left-style: solid;border-left-color: var(--green);width: 930px;">
                 <h2 class="text-center" style="color: var(--green);background: var(--white);text-shadow: 0px 0px var(--purple);">Stock Your Shop</h2>
                 <div class="form-group" style="width: 820px;border-right-style: none;border-right-color: var(--indigo);"><label for="text-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-star"></i>Product ID</label><input class="form-control-plaintext" type="text" value="Product ID: <%out.print(productId); %>" id="productId" name="productId"  /></div>
-                <div class="form-group"><label for="text-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil-square-o"></i>  Title</label><input type="text" class="form-control" id="title" name="title" required /><small style="color: var(--blue);font-size: 14px;"><br />Tell the world all about your item and why theyâ€™ll love it.<br /><br /></small></div>
-                <div class="form-group"><label for="textarea-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil"></i>Short Description</label><textarea id="sDesc" name="sDesc" class="form-control"></textarea><small style="color: var(--blue);font-size: 14px;"><br />Start with a brief overview that describes your itemâ€™s finest features. Shoppers will only see this description at first, so make it count!<br /><br /></small></div>
+                <div class="form-group"><label for="text-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil-square-o"></i>  Title</label><input type="text" class="form-control" id="title" name="title" required /><small style="color: var(--blue);font-size: 14px;"><br />Tell the world all about your item and why they all love it.<br /><br /></small></div>
+                <div class="form-group"><label for="textarea-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil"></i>Short Description</label><textarea id="sDesc" name="sDesc" class="form-control"></textarea><small style="color: var(--blue);font-size: 14px;"><br />Start with a brief overview that describes your itemes finest features. Shoppers will only see this description at first, so make it count!<br /><br /></small></div>
                 <div class="form-group"><label for="textarea-input" style="font-size: 15px;font-family: 'Alfa Slab One', cursive;"><i class="fa fa-pencil"></i> Description</label><textarea id="lDesc" name="lDesc" class="form-control" style="  max-height: 300px;
   height: 300px;
 " required></textarea><small style="color: var(--blue);font-size: 14px;">Not sure what else to say? Shoppers also like hearing about your process, and the story behind this item.<br /><br /></small></div>
@@ -116,7 +114,7 @@ String productId = Product.generateProductId();
                                     <div class="modal-body" id="successalert" style="color: green;height: 112px;">
                                         <div class="form-row">
                                             <div class="col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center" style="font-size: 80px;"><i class="far fa-check-circle"></i></div>
-                                            <div class="col d-xl-flex justify-content-xl-start align-items-xl-center"><span class="d-xl-flex" style="font-size: 25px;"><strong>Success! </strong>This is alert</span></div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +164,7 @@ String productId = Product.generateProductId();
         </div>
     </div>
 </div>
-    <div style="margin-top: 50px;">
+    <div style="margin-top: 100px;">
         <footer class="footer-basic">
             <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
