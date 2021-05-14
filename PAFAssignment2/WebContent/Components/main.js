@@ -131,20 +131,22 @@ function onItemDeleteComplete(response, status)
 
 function validateItemForm() 
 { 
-	// CODE
+	// Random ID
 	if ($("#productId").val().trim() == "") 
 	 { 
  		return "Insert Item Code."; 
  	} 
-	// NAME
+	// Title
 	if ($("#title").val().trim() == "") 
  	{ 
  		return "Insert Item Name."; 
  	} 
+ 	// Short Description
  	if ($("#sDesc").val().trim() == "") 
  	{ 
  		return "Insert Short Description."; 
  	} 
+ 	// Long Description
  	if ($("#lDesc").val().trim() == "") 
  	{ 
  		return "Insert Long Description."; 
@@ -163,7 +165,7 @@ function validateItemForm()
  	} 
 	// convert to decimal price
  	$("#price").val(parseFloat(price).toFixed(2)); 
-	// DESCRIPTION------------------------
+	// Link------------------------
 	if ($("#downloadLink").val().trim() == "") 
 	 { 
  		return "Insert Link."; 

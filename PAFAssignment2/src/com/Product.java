@@ -10,7 +10,7 @@ import java.util.Random;
 public class Product {
 	
 
-	
+	//DB connection
 	private Connection connect() {
 		
 		Connection con = null;
@@ -44,7 +44,7 @@ public class Product {
 	}
 
 	
-	
+	//retrieve data from database
 	public String readProducts() {
 		
 		String output = "";
@@ -116,7 +116,7 @@ public class Product {
 		return output;
 		
 	}
-	
+	//insert data to database
 	public String insertProduct(String productId,String title,String sDesc,String lDesc, String price,String downloadLink ) {
 		
 		String output = "";
@@ -164,6 +164,7 @@ public class Product {
 		return output;
 	}
 
+	//update data from table and database
 	public String updateProduct(String id,String productId,String title,String sDesc,String lDesc, String price,String downloadLink ) {
 		
 		String output = "";
@@ -210,6 +211,8 @@ public class Product {
 		return output;
 		
 	}
+	
+	//delete data from table and database
 	public String deleteProducts(String id) {
 		
 		String output = "";
